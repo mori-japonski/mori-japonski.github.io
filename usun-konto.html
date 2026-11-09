@@ -2,18 +2,160 @@
 <html lang="pl">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jak poprosić o usunięcie konta Mori i powiązanych z nim danych.">
   <title>Usuń konto w Mori</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, sans-serif;
+      color: #24372e;
+      background: #f6f5ef;
+    }
+
+    body {
+      margin: 0;
+      line-height: 1.65;
+    }
+
+    main {
+      box-sizing: border-box;
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: clamp(1.25rem, 5vw, 3rem);
+    }
+
+    header {
+      padding-bottom: 1.25rem;
+    }
+
+    .brand {
+      margin: 0 0 0.75rem;
+      color: #315c4b;
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 {
+      margin: 0 0 0.65rem;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    p, ol, ul {
+      margin: 0.6rem 0;
+    }
+
+    ol, ul {
+      padding-left: 1.4rem;
+    }
+
+    li + li {
+      margin-top: 0.55rem;
+    }
+
+    section {
+      margin: 1rem 0;
+      padding: clamp(1rem, 4vw, 1.6rem);
+      background: #fff;
+      border: 1px solid #dce4d8;
+      border-radius: 1rem;
+    }
+
+    .request {
+      background: #e8eee2;
+    }
+
+    a {
+      color: #215443;
+      text-underline-offset: 0.2em;
+      overflow-wrap: anywhere;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #24372e;
+      outline-offset: 4px;
+    }
+
+    .action {
+      display: inline-block;
+      box-sizing: border-box;
+      max-width: 100%;
+      margin-top: 0.5rem;
+      padding: 0.7rem 1rem;
+      border-radius: 0.65rem;
+      background: #285444;
+      color: #fff;
+      font-weight: 700;
+    }
+  </style>
 </head>
 <body>
-  <h1>Usuń konto w Mori</h1>
-  <p>Aby poprosić o usunięcie konta i powiązanych danych, wyślij
-    wiadomość z adresu e-mail przypisanego do konta Mori.
-    W temacie wpisz „Usuń konto Mori”.</p>
-  <p>Adres pomocy: [WSTAW ADRES E-MAIL]</p>
-  <h2>Jakie dane usuwamy</h2>
-  <p>Po potwierdzeniu zgłoszenia usuwamy konto Mori, adres e-mail
-    i identyfikator konta. [UZUPEŁNIJ O POZOSTAŁE USUWANE DANE]</p>
-  <h2>Jakie dane przechowujemy dłużej</h2>
-  <p>[PODAJ RZECZYWISTE KATEGORIE DANYCH, POWODY I OKRESY PRZECHOWYWANIA]</p>
+  <main>
+    <header>
+      <p class="brand">Mori: Nauka japońskiego</p>
+      <h1>Usuń konto w Mori</h1>
+      <p>Tutaj możesz poprosić o usunięcie konta w aplikacji Mori i powiązanych z nim danych.</p>
+    </header>
+
+    <section class="request" aria-labelledby="jak-zglosic">
+      <h2 id="jak-zglosic">Jak wysłać zgłoszenie</h2>
+      <ol>
+        <li>Wyślij wiadomość na <strong>ufo.game.over@gmail.com</strong> z adresu e-mail
+          przypisanego do Twojego konta Mori. W temacie wpisz „Usuń konto Mori”.</li>
+        <li>Jeśli potrzebujemy dodatkowego potwierdzenia, że konto należy do Ciebie,
+          skontaktujemy się z Tobą e-mailem.</li>
+        <li>Po usunięciu konta potwierdzimy realizację zgłoszenia e-mailem.</li>
+      </ol>
+      <a class="action" href="mailto:ufo.game.over@gmail.com?subject=Usu%C5%84%20konto%20Mori">Wyślij prośbę o usunięcie konta</a>
+    </section>
+
+    <section aria-labelledby="usuwane-dane">
+      <h2 id="usuwane-dane">Jakie dane usuwamy</h2>
+      <ul>
+        <li>Profil konta Mori w Firebase Authentication, w tym adres e-mail, identyfikator
+          użytkownika oraz nazwę profilu, jeśli jest zapisana.</li>
+        <li>Postępy nauki, notatki i ustawienia zapisane w usługach Mori, jeśli były
+          synchronizowane z kontem.</li>
+        <li>Profil klienta i przypisaną do niego historię zakupów w RevenueCat, jeśli
+          obsługa zakupów Mori Plus utworzyła taki profil dla Twojego konta.</li>
+      </ul>
+      <p>Jeśli postępy lub notatki są zapisane wyłącznie na telefonie, możesz je usunąć
+        na tym urządzeniu. Otwórz <strong>Ustawienia Androida → Aplikacje → Mori →
+        Pamięć</strong> i wybierz opcję wyczyszczenia danych aplikacji.</p>
+    </section>
+
+    <section aria-labelledby="przechowywanie">
+      <h2 id="przechowywanie">Jak długo dane mogą być przechowywane</h2>
+      <ul>
+        <li><strong>Zgłoszenie e-mail.</strong> Korespondencję przechowujemy do zakończenia
+          obsługi zgłoszenia, po czym usuwamy ją z naszej skrzynki.</li>
+        <li><strong>Firebase Authentication.</strong> Od zlecenia usunięcia konta Firebase
+          usuwa pozostałe dane uwierzytelniania z aktywnych systemów i kopii zapasowych
+          w ciągu 180 dni. Dzienniki adresów IP Firebase przechowuje przez kilka tygodni.
+          <a href="https://firebase.google.com/support/privacy">Zasady prywatności Firebase</a>.</li>
+        <li><strong>Płatności Google Play.</strong> Jeśli dokonano zakupu, Google może
+          przechowywać własne rejestry transakcji przez okres potrzebny do rozliczeń
+          i wypełnienia obowiązków prawnych.
+          <a href="https://policies.google.com/technologies/retention?hl=pl">Zasady przechowywania danych Google</a>.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="subskrypcja">
+      <h2 id="subskrypcja">Aktywna subskrypcja Mori Plus</h2>
+      <p>Jeśli chcesz zatrzymać kolejne opłaty, anuluj odnowienie subskrypcji Mori Plus
+        w ustawieniach subskrypcji Google Play.
+        <a href="https://support.google.com/googleplay/answer/7018481?hl=pl">Instrukcja anulowania subskrypcji</a>.</p>
+    </section>
+  </main>
 </body>
 </html>
