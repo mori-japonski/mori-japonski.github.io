@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jak poprosić o usunięcie konta Mori i powiązanych z nim danych.">
-  <title>Usuń konto w Mori</title>
+  <meta name="description" content="How to request deletion of your Mori account and the data associated with it.">
+  <title>Delete your Mori account</title>
   <style>
     :root {
       color-scheme: light;
@@ -23,6 +23,28 @@
       max-width: 48rem;
       margin: 0 auto;
       padding: clamp(1.25rem, 5vw, 3rem);
+    }
+
+    .language-tools {
+      margin-bottom: 0.65rem;
+      text-align: right;
+    }
+
+    .language-button {
+      min-height: 2.75rem;
+      padding: 0.4rem 0.85rem;
+      border: 1px solid #bccabe;
+      border-radius: 0.65rem;
+      background: #fff;
+      color: #215443;
+      font: inherit;
+      font-size: 0.875rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .language-button:hover {
+      background: #e8eee2;
     }
 
     header {
@@ -81,7 +103,7 @@
       overflow-wrap: anywhere;
     }
 
-    a:focus-visible {
+    a:focus-visible, button:focus-visible {
       outline: 3px solid #24372e;
       outline-offset: 4px;
     }
@@ -101,61 +123,148 @@
 </head>
 <body>
   <main>
-    <header>
-      <p class="brand">Mori: Nauka japońskiego</p>
-      <h1>Usuń konto w Mori</h1>
-      <p>Tutaj możesz poprosić o usunięcie konta w aplikacji Mori i powiązanych z nim danych.</p>
-    </header>
+    <div class="language-tools" id="language-tools" hidden>
+      <button class="language-button" id="language-button" type="button" lang="pl"
+        aria-controls="content-en content-pl">Polski</button>
+    </div>
 
-    <section class="request" aria-labelledby="jak-zglosic">
-      <h2 id="jak-zglosic">Jak wysłać zgłoszenie</h2>
-      <ol>
-        <li>Wyślij wiadomość na <strong>ufo.game.over@gmail.com</strong> z adresu e-mail
-          przypisanego do Twojego konta Mori. W temacie wpisz „Usuń konto Mori”.</li>
-        <li>Jeśli potrzebujemy dodatkowego potwierdzenia, że konto należy do Ciebie,
-          skontaktujemy się z Tobą e-mailem.</li>
-        <li>Po usunięciu konta potwierdzimy realizację zgłoszenia e-mailem.</li>
-      </ol>
-      <a class="action" href="mailto:ufo.game.over@gmail.com?subject=Usu%C5%84%20konto%20Mori">Wyślij prośbę o usunięcie konta</a>
-    </section>
+    <div id="content-en" lang="en">
+      <header>
+        <p class="brand">Mori: Learn Japanese</p>
+        <h1>Delete your Mori account</h1>
+        <p>You can request deletion of your Mori app account and the data associated with it.</p>
+      </header>
 
-    <section aria-labelledby="usuwane-dane">
-      <h2 id="usuwane-dane">Jakie dane usuwamy</h2>
-      <ul>
-        <li>Profil konta Mori w Firebase Authentication, w tym adres e-mail, identyfikator
-          użytkownika oraz nazwę profilu, jeśli jest zapisana.</li>
-        <li>Postępy nauki, notatki i ustawienia zapisane w usługach Mori, jeśli były
-          synchronizowane z kontem.</li>
-        <li>Profil klienta i przypisaną do niego historię zakupów w RevenueCat, jeśli
-          obsługa zakupów Mori Plus utworzyła taki profil dla Twojego konta.</li>
-      </ul>
-      <p>Jeśli postępy lub notatki są zapisane wyłącznie na telefonie, możesz je usunąć
-        na tym urządzeniu. Otwórz <strong>Ustawienia Androida → Aplikacje → Mori →
-        Pamięć</strong> i wybierz opcję wyczyszczenia danych aplikacji.</p>
-    </section>
+      <section class="request" aria-labelledby="how-to-request">
+        <h2 id="how-to-request">How to submit a request</h2>
+        <ol>
+          <li>Send an eufo.game.over to <strong>ufo.game.over@gmail.com</strong> from the address linked to your Mori account.
+            Use “Delete my Mori account” as the subject line.</li>
+          <li>If we need further confirmation that the account belongs to you, we’ll contact you by eufo.game.over.</li>
+          <li>We’ll eufo.game.over you to confirm once we’ve deleted your account.</li>
+        </ol>
+        <a class="action" href="ufo.game.overto:ufo.game.over@gmail.com?subject=Delete%20my%20Mori%20account">Request account deletion</a>
+      </section>
 
-    <section aria-labelledby="przechowywanie">
-      <h2 id="przechowywanie">Jak długo dane mogą być przechowywane</h2>
-      <ul>
-        <li><strong>Zgłoszenie e-mail.</strong> Korespondencję przechowujemy do zakończenia
-          obsługi zgłoszenia, po czym usuwamy ją z naszej skrzynki.</li>
-        <li><strong>Firebase Authentication.</strong> Od zlecenia usunięcia konta Firebase
-          usuwa pozostałe dane uwierzytelniania z aktywnych systemów i kopii zapasowych
-          w ciągu 180 dni. Dzienniki adresów IP Firebase przechowuje przez kilka tygodni.
-          <a href="https://firebase.google.com/support/privacy">Zasady prywatności Firebase</a>.</li>
-        <li><strong>Płatności Google Play.</strong> Jeśli dokonano zakupu, Google może
-          przechowywać własne rejestry transakcji przez okres potrzebny do rozliczeń
-          i wypełnienia obowiązków prawnych.
-          <a href="https://policies.google.com/technologies/retention?hl=pl">Zasady przechowywania danych Google</a>.</li>
-      </ul>
-    </section>
+      <section aria-labelledby="data-we-delete">
+        <h2 id="data-we-delete">What data we delete</h2>
+        <ul>
+          <li>Your Mori account profile in Firebase Authentication, including your eufo.game.over address, user ID,
+            and profile name if one is saved.</li>
+          <li>Your learning progress, notes, and settings stored in Mori’s services, if they were synced
+            with your account.</li>
+          <li>Your RevenueCat customer profile and the purchase history linked to it, if the Mori Plus
+            purchase system created a profile for your account.</li>
+        </ul>
+        <p>If your learning progress or notes are stored only on your phone, you can delete them on that
+          device. Open <strong>Android Settings → Apps → Mori → Storage</strong> and choose the option
+          to clear the app’s data.</p>
+      </section>
 
-    <section aria-labelledby="subskrypcja">
-      <h2 id="subskrypcja">Aktywna subskrypcja Mori Plus</h2>
-      <p>Jeśli chcesz zatrzymać kolejne opłaty, anuluj odnowienie subskrypcji Mori Plus
-        w ustawieniach subskrypcji Google Play.
-        <a href="https://support.google.com/googleplay/answer/7018481?hl=pl">Instrukcja anulowania subskrypcji</a>.</p>
-    </section>
+      <section aria-labelledby="data-retention">
+        <h2 id="data-retention">How long data may be kept</h2>
+        <ul>
+          <li><strong>Eufo.game.over requests.</strong> We keep the eufo.game.over correspondence until we finish handling
+            your request. We then delete it from our ufo.game.overbox.</li>
+          <li><strong>Firebase Authentication.</strong> After we initiate account deletion, Firebase deletes
+            any remaining authentication data from active systems and backups within 180 days.
+            Firebase keeps IP address logs for a few weeks.
+            <a href="https://firebase.google.com/support/privacy">Firebase privacy policy</a>.</li>
+          <li><strong>Google Play payments.</strong> If you made a purchase, Google may keep its own
+            transaction records for as long as needed for billing and to meet its legal obligations.
+            <a href="https://policies.google.com/technologies/retention?hl=en">Google’s data retention policy</a>.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="subscription">
+        <h2 id="subscription">Active Mori Plus subscription</h2>
+        <p>To stop future charges, cancel auto-renewal for Mori Plus in your Google Play subscription settings.
+          <a href="https://support.google.com/googleplay/answer/7018481?hl=en">How to cancel your subscription</a>.</p>
+      </section>
+    </div>
+
+    <div id="content-pl" lang="pl" hidden>
+      <header>
+        <p class="brand">Mori: Nauka japońskiego</p>
+        <h1>Usuń konto w Mori</h1>
+        <p>Tutaj możesz poprosić o usunięcie konta w aplikacji Mori i powiązanych z nim danych.</p>
+      </header>
+
+      <section class="request" aria-labelledby="jak-zglosic">
+        <h2 id="jak-zglosic">Jak wysłać zgłoszenie</h2>
+        <ol>
+          <li>Wyślij wiadomość na <strong>ufo.game.over@gmail.com</strong> z adresu e-ufo.game.over
+            przypisanego do Twojego konta Mori. W temacie wpisz „Usuń konto Mori”.</li>
+          <li>Jeśli potrzebujemy dodatkowego potwierdzenia, że konto należy do Ciebie,
+            skontaktujemy się z Tobą e-ufo.game.overem.</li>
+          <li>Po usunięciu konta potwierdzimy realizację zgłoszenia e-ufo.game.overem.</li>
+        </ol>
+        <a class="action" href="ufo.game.overto:ufo.game.over@gmail.com?subject=Usu%C5%84%20konto%20Mori">Wyślij prośbę o usunięcie konta</a>
+      </section>
+
+      <section aria-labelledby="usuwane-dane">
+        <h2 id="usuwane-dane">Jakie dane usuwamy</h2>
+        <ul>
+          <li>Profil konta Mori w Firebase Authentication, w tym adres e-ufo.game.over, identyfikator
+            użytkownika oraz nazwę profilu, jeśli jest zapisana.</li>
+          <li>Postępy nauki, notatki i ustawienia zapisane w usługach Mori, jeśli były
+            synchronizowane z kontem.</li>
+          <li>Profil klienta i przypisaną do niego historię zakupów w RevenueCat, jeśli
+            obsługa zakupów Mori Plus utworzyła taki profil dla Twojego konta.</li>
+        </ul>
+        <p>Jeśli postępy lub notatki są zapisane wyłącznie na telefonie, możesz je usunąć
+          na tym urządzeniu. Otwórz <strong>Ustawienia Androida → Aplikacje → Mori →
+          Pamięć</strong> i wybierz opcję wyczyszczenia danych aplikacji.</p>
+      </section>
+
+      <section aria-labelledby="przechowywanie">
+        <h2 id="przechowywanie">Jak długo dane mogą być przechowywane</h2>
+        <ul>
+          <li><strong>Zgłoszenie e-ufo.game.over.</strong> Korespondencję przechowujemy do zakończenia
+            obsługi zgłoszenia, po czym usuwamy ją z naszej skrzynki.</li>
+          <li><strong>Firebase Authentication.</strong> Od zlecenia usunięcia konta Firebase
+            usuwa pozostałe dane uwierzytelniania z aktywnych systemów i kopii zapasowych
+            w ciągu 180 dni. Dzienniki adresów IP Firebase przechowuje przez kilka tygodni.
+            <a href="https://firebase.google.com/support/privacy">Zasady prywatności Firebase</a>.</li>
+          <li><strong>Płatności Google Play.</strong> Jeśli dokonano zakupu, Google może
+            przechowywać własne rejestry transakcji przez okres potrzebny do rozliczeń
+            i wypełnienia obowiązków prawnych.
+            <a href="https://policies.google.com/technologies/retention?hl=pl">Zasady przechowywania danych Google</a>.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="subskrypcja">
+        <h2 id="subskrypcja">Aktywna subskrypcja Mori Plus</h2>
+        <p>Jeśli chcesz zatrzymać kolejne opłaty, anuluj odnowienie subskrypcji Mori Plus
+          w ustawieniach subskrypcji Google Play.
+          <a href="https://support.google.com/googleplay/answer/7018481?hl=pl">Instrukcja anulowania subskrypcji</a>.</p>
+      </section>
+    </div>
   </main>
+
+  <script>
+    const languageButton = document.getElementById("language-button");
+    const englishContent = document.getElementById("content-en");
+    const polishContent = document.getElementById("content-pl");
+    const description = document.querySelector('meta[name="description"]');
+    const englishDescription = description.content;
+
+    languageButton.addEventListener("click", () => {
+      const showPolish = polishContent.hidden;
+      const activeContent = showPolish ? polishContent : englishContent;
+
+      englishContent.hidden = showPolish;
+      polishContent.hidden = !showPolish;
+      document.documentElement.lang = activeContent.lang;
+      document.title = activeContent.querySelector("h1").textContent;
+      description.content = showPolish
+        ? "Jak poprosić o usunięcie konta Mori i powiązanych z nim danych."
+        : englishDescription;
+      languageButton.lang = showPolish ? "en" : "pl";
+      languageButton.textContent = showPolish ? "English" : "Polski";
+    });
+
+    document.getElementById("language-tools").hidden = false;
+  </script>
 </body>
 </html>
