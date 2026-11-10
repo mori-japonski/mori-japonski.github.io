@@ -1,1 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terms of service for the Mori Android app, including accounts and Mori Plus plans.">
+  <title>Mori Terms of Service</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, sans-serif;
+      color: #24372e;
+      background: #f6f5ef;
+    }
+
+    body {
+      margin: 0;
+      line-height: 1.65;
+    }
+
+    main {
+      box-sizing: border-box;
+      max-width: 49rem;
+      margin: 0 auto;
+      padding: clamp(1.25rem, 5vw, 3rem);
+    }
+
+    header {
+      margin-bottom: 1.5rem;
+    }
+
+    .brand {
+      margin: 0 0 0.75rem;
+      color: #315c4b;
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 0.6rem;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3rem);
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    p, dl, ul {
+      margin: 0.65rem 0;
+    }
+
+    .language-switch {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .language-switch a {
+      display: inline-flex;
+      align-items: center;
+      box-sizing: border-box;
+      min-height: 2.75rem;
+      padding: 0.4rem 0.85rem;
+      border: 1px solid #91a698;
+      border-radius: 0.55rem;
+      background: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .language-switch a[aria-current="page"] {
+      border-color: #285444;
+      background: #285444;
+      color: #fff;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 1rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    section {
+      margin: 1rem 0;
+      padding: clamp(1rem, 4vw, 1.6rem);
+      background: #fff;
+      border: 1px solid #dce4d8;
+      border-radius: 1rem;
+    }
+
+    .highlight {
+      background: #e8eee2;
+    }
+
+    dt {
+      margin-top: 0.75rem;
+      font-weight: 700;
+    }
+
+    dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .example {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #f6f5ef;
+      border-radius: 0.65rem;
+    }
+
+    .example ul {
+      padding-left: 1.25rem;
+    }
+
+    a {
+      color: #215443;
+      text-underline-offset: 0.2em;
+      overflow-wrap: anywhere;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #24372e;
+      outline-offset: 3px;
+    }
+
+    footer {
+      margin-top: 1.4rem;
+      color: #43594d;
+      font-size: 0.9rem;
+    }
+
+    @media print {
+      :root, section, .highlight, .example {
+        color: #111;
+        background: #fff;
+      }
+
+      main {
+        max-width: none;
+        padding: 0;
+      }
+
+      nav {
+        display: none;
+      }
+
+      h2, h3, dt {
+        break-after: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="language-switch" aria-label="Language / Język">
+      <a href="?lang=en#english" hreflang="en" lang="en">English</a>
+      <a href="?lang=pl#polski" hreflang="pl" lang="pl">Polski</a>
+    </nav>
+
+    <header id="english" lang="en" data-terms-language="en">
+      <p class="brand">Mori: Learn Japanese</p>
+      <h1>Mori Terms of Service</h1>
+      <p>These terms cover accounts, free features and Mori Plus purchases in the Mori Android app.</p>
+      <nav aria-label="Key sections of the terms">
+        <ul>
+          <li><a href="#kontakt">Contact</a></li>
+          <li><a href="#mori-plus-en">Mori Plus</a></li>
+          <li><a href="#cancellation">Cancel a subscription</a></li>
+          <li><a href="#withdrawal">Withdrawal and refunds</a></li>
+          <li><a href="#complaints">Complaints</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header lang="pl" data-terms-language="pl">
+      <p class="brand">Mori: Nauka japońskiego</p>
+      <h1>Warunki korzystania z Mori</h1>
+      <p>Regulamin opisuje prowadzenie konta, bezpłatne funkcje i zakup Mori Plus w aplikacji Mori na Androidzie.</p>
+      <nav aria-label="Najważniejsze sekcje regulaminu">
+        <ul>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#mori-plus">Mori Plus</a></li>
+          <li><a href="#anulowanie">Anulowanie subskrypcji</a></li>
+          <li><a href="#odstapienie">Odstąpienie i zwroty</a></li>
+          <li><a href="#reklamacje">Reklamacje</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section aria-labelledby="kontakt">
+      <h2 id="kontakt">
+        <span lang="en" data-terms-language="en">1. Publisher and contact details</span>
+        <span lang="pl" data-terms-language="pl">1. Wydawca i kontakt</span>
+      </h2>
+      <!-- Dane są wspólne dla obu języków. Obok imienia i nazwiska możesz podać nazwę
+           dewelopera z Google Play. Podmień adres e-mail w tekście i w mailto. -->
+      <dl>
+        <div>
+          <dt>
+            <span lang="en" data-terms-language="en">Publisher</span>
+            <span lang="pl" data-terms-language="pl">Wydawca</span>
+          </dt>
+          <dd>Dorota Dudkowiak</dd>
+        </div>
+        <div>
+          <dt>
+            <span lang="en" data-terms-language="en">Postal address</span>
+            <span lang="pl" data-terms-language="pl">Adres</span>
+          </dt>
+          <dd>ul. Sulmierzycka 8, 51-127, Wrocław, Poland</dd>
+        </div>
+        <div>
+          <dt>
+            <span lang="en" data-terms-language="en">Email for support and complaints</span>
+            <span lang="pl" data-terms-language="pl">E-mail do kontaktu i reklamacji</span>
+          </dt>
+          <dd><a href="mailto:ufo.game.over@gmail.com">ufo.game.over@gmail.com</a></dd>
+        </div>
+        <div>
+          <dt>
+            <span lang="en" data-terms-language="en">Phone</span>
+            <span lang="pl" data-terms-language="pl">Telefon</span>
+          </dt>
+          <dd>799206600</dd>
+        </div>
+      </dl>
+    </section>
+
+    <div lang="en" data-terms-language="en">
+      <section aria-labelledby="account">
+        <h2 id="account">2. Account and technical requirements</h2>
+        <p>Mori requires an account. You enter into an agreement for free account access
+          when you complete registration with an email address and password or Google Sign-In.
+          The agreement continues until you close your account as described in section 5.</p>
+        <p>You need an Android device compatible with the version specified in the Mori
+          listing on Google Play. An internet connection is required for registration,
+          signing in and purchase verification. Purchases require a Google Play account.</p>
+        <p>Supplying unlawful content through Mori is prohibited.</p>
+      </section>
+
+      <section aria-labelledby="service">
+        <h2 id="service">3. Scope of the service</h2>
+        <p>Mori provides Japanese lessons, character exercises, vocabulary review and reading
+          practice. Features and materials marked as free are available without payment
+          and may include ads.</p>
+        <p>Optional Mori Plus access includes the features and materials described before
+          purchase. Offline study is available only with Mori Plus, for the content specified
+          in that offer.</p>
+      </section>
+
+      <section class="highlight" aria-labelledby="mori-plus-en">
+        <h2 id="mori-plus-en">4. Mori Plus and payments</h2>
+        <p>Purchases are made through Google Play Billing. Before you confirm a purchase,
+          the purchase screen shows the total price including applicable taxes, the features
+          included, the billing period and the available payment methods. Paid access is
+          activated after the purchase is confirmed. The purchase confirmation identifies
+          the seller.</p>
+        <dl>
+          <dt>Monthly subscription</dt>
+          <dd>You pay each month. The subscription renews automatically each month until
+            you cancel renewal.</dd>
+          <dt>Annual subscription</dt>
+          <dd>You pay the full annual price at once. The subscription renews automatically
+            each year until you cancel renewal.</dd>
+          <dt>Mori Plus Lifetime</dt>
+          <dd>A one-time payment grants access to the features listed in the offer without
+            a fixed end date.</dd>
+        </dl>
+      </section>
+
+      <section aria-labelledby="cancellation">
+        <h2 id="cancellation">5. Subscription cancellation and account closure</h2>
+        <p>To stop future charges, <a href="https://play.google.com/store/account/subscriptions">open your Google Play subscriptions</a>,
+          select Mori Plus and cancel renewal before the next billing date.
+          Access normally continues until the end of the paid period.</p>
+        <p>You can end your account agreement at any time by requesting account deletion
+          using the <a href="./usun-konto.html" hreflang="pl">Mori account deletion instructions</a>.
+          To stop subscription renewal, cancel it separately in Google Play.</p>
+      </section>
+
+      <section aria-labelledby="withdrawal">
+        <h2 id="withdrawal">6. Statutory withdrawal and refunds in the EU</h2>
+        <p>If EU consumer rules grant you a right to withdraw, you have 14 days from the date
+          of the contract to do so without giving a reason. Send a clear withdrawal statement
+          before that period expires. For the Mori account agreement, use the publisher's
+          email or postal address in section 1. For a Google Play purchase, address your
+          withdrawal to the seller identified in the purchase confirmation; you can use
+          the <a href="https://support.google.com/googleplay/answer/2479637?hl=en">Google Play refund procedure</a>.</p>
+        <p>For paid digital content supplied without a physical medium, you lose the right
+          of withdrawal when delivery begins only if you have expressly consented to early
+          delivery, acknowledged the loss of that right and received the required confirmation.</p>
+        <p>A refund due following withdrawal is made within 14 days of receipt of the statement,
+          using the original payment method unless you agree otherwise, without refund fees.
+          If you expressly request that a paid service begin during the withdrawal period,
+          applicable law may require proportionate payment for the service supplied before
+          withdrawal.</p>
+        <div class="example">
+          <h3>Withdrawal form</h3>
+          <p>Use this form only if you wish to withdraw. You may instead send any other clear
+            statement. Send it to the appropriate recipient identified above.</p>
+          <p>I hereby give notice that I withdraw from my contract for the following
+            Mori service or digital content:</p>
+          <ul>
+            <li>Service or digital content: ___________________</li>
+            <li>Date of the contract: ____________________</li>
+            <li>Consumer's name: ____________________</li>
+            <li>Consumer's address: ____________________</li>
+            <li>Date: ____________________</li>
+            <li>Consumer's signature, only if sent on paper: ____________________</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="complaints">
+        <h2 id="complaints">7. Complaints and dispute resolution</h2>
+        <p>Send complaints to the <a href="#kontakt">publisher's email or postal address</a>.
+          Describe the problem, the remedy requested and how to reply to you.
+          Where Polish consumer law applies, we respond within 14 days of receipt,
+          by email or post.</p>
+        <p>The publisher is responsible for the statutory conformity of digital content
+          and services, including necessary updates. Under EU consumer rules, you can
+          request that non-conforming content or services be brought into conformity.
+          If the statutory conditions are met, you can request a proportionate price
+          reduction or terminate the contract.</p>
+        <p>In the EU, you can apply to a competent out-of-court consumer dispute resolution
+          body after a complaint remains unresolved. Its rules specify eligibility and
+          the application procedure; participation may require both parties' consent.
+          See the <a href="https://consumer-redress.ec.europa.eu/list-alternative-dispute-resolution-adr-bodies_en">EU directory of dispute resolution bodies</a>.</p>
+      </section>
+    </div>
+
+    <div id="polski" lang="pl" data-terms-language="pl">
+      <section aria-labelledby="konto">
+        <h2 id="konto">2. Konto i wymagania techniczne</h2>
+        <p>Korzystanie z Mori wymaga konta. Umowę o bezpłatne prowadzenie konta zawierasz
+          po ukończeniu rejestracji przy użyciu adresu e-mail i hasła albo logowania Google.
+          Umowa trwa do zakończenia korzystania z konta zgodnie z sekcją 5.</p>
+        <p>Potrzebujesz urządzenia z wersją Androida zgodną z wymaganiami podanymi
+          w informacjach o Mori w Google Play. Internet jest wymagany do rejestracji,
+          logowania i potwierdzenia zakupów. Zakupy wymagają konta Google Play.</p>
+        <p>Użytkownik nie może dostarczać w ramach Mori treści bezprawnych.</p>
+      </section>
+
+      <section aria-labelledby="zakres">
+        <h2 id="zakres">3. Zakres usługi</h2>
+        <p>Mori udostępnia lekcje języka japońskiego, ćwiczenia znaków, powtórki słownictwa
+          i czytanki. Funkcje i materiały oznaczone jako bezpłatne są dostępne bez opłat
+          i mogą zawierać reklamy.</p>
+        <p>Opcjonalny dostęp Mori Plus obejmuje funkcje i materiały opisane przed zakupem.
+          Nauka offline jest dostępna tylko w Mori Plus, dla treści wskazanych w tej ofercie.</p>
+      </section>
+
+      <section class="highlight" aria-labelledby="mori-plus">
+        <h2 id="mori-plus">4. Mori Plus i płatności</h2>
+        <p>Zakupy odbywają się przez system rozliczeniowy Google Play. Przed potwierdzeniem
+          zakupu ekran zakupu pokazuje łączną cenę z należnymi podatkami, zakres dostępu,
+          okres rozliczeniowy i dostępne sposoby płatności. Płatny dostęp jest aktywowany
+          po potwierdzeniu zakupu. Potwierdzenie zakupu wskazuje sprzedawcę.</p>
+        <dl>
+          <dt>Subskrypcja miesięczna</dt>
+          <dd>Płacisz co miesiąc. Subskrypcja odnawia się automatycznie co miesiąc
+            do czasu anulowania odnowienia.</dd>
+          <dt>Subskrypcja roczna</dt>
+          <dd>Płacisz jednorazowo pełną cenę za rok. Subskrypcja odnawia się automatycznie
+            co rok do czasu anulowania odnowienia.</dd>
+          <dt>Mori Plus na zawsze</dt>
+          <dd>Jednorazowa opłata zapewnia bezterminowy dostęp do funkcji wymienionych
+            w ofercie tego produktu.</dd>
+        </dl>
+      </section>
+
+      <section aria-labelledby="anulowanie">
+        <h2 id="anulowanie">5. Anulowanie subskrypcji i zamknięcie konta</h2>
+        <p>Aby zatrzymać kolejne opłaty, <a href="https://play.google.com/store/account/subscriptions">otwórz swoje subskrypcje w Google Play</a>,
+          wybierz Mori Plus i anuluj odnowienie przed kolejną datą rozliczenia.
+          Dostęp co do zasady trwa do końca opłaconego okresu.</p>
+        <p>Umowę o prowadzenie konta możesz zakończyć w każdej chwili, prosząc o jego usunięcie
+          zgodnie z <a href="./usun-konto.html">instrukcją usuwania konta Mori</a>.
+          Aby zatrzymać odnowienie subskrypcji, anuluj je osobno w Google Play.</p>
+      </section>
+
+      <section aria-labelledby="odstapienie">
+        <h2 id="odstapienie">6. Ustawowe odstąpienie od umowy i zwroty w UE</h2>
+        <p>Jeśli przepisy konsumenckie UE przyznają Ci prawo odstąpienia, masz 14 dni
+          od zawarcia umowy na odstąpienie bez podawania przyczyny. Wyślij jednoznaczne
+          oświadczenie przed upływem tego terminu. Przy umowie o konto Mori użyj adresu
+          e-mail lub pocztowego wydawcy z sekcji 1. Przy zakupie w Google Play kieruj
+          odstąpienie do sprzedawcy wskazanego w potwierdzeniu zakupu; możesz skorzystać
+          z <a href="https://support.google.com/googleplay/answer/2479637?hl=pl">procedury zwrotów Google Play</a>.</p>
+        <p>Przy odpłatnej treści cyfrowej dostarczanej bez materialnego nośnika tracisz
+          prawo odstąpienia z chwilą rozpoczęcia dostarczania tylko po udzieleniu wyraźnej
+          zgody na wcześniejsze dostarczenie, przyjęciu do wiadomości utraty tego prawa
+          i otrzymaniu wymaganego potwierdzenia.</p>
+        <p>Należny zwrot po odstąpieniu następuje w ciągu 14 dni od otrzymania oświadczenia,
+          przy użyciu pierwotnego sposobu płatności, chyba że uzgodnisz inny, bez opłat za zwrot.
+          Jeśli wyraźnie zażądasz rozpoczęcia odpłatnej usługi w okresie odstąpienia,
+          właściwe przepisy mogą wymagać proporcjonalnej zapłaty za świadczenie spełnione
+          do chwili odstąpienia.</p>
+        <div class="example">
+          <h3>Formularz odstąpienia</h3>
+          <p>Użyj formularza tylko wtedy, gdy chcesz odstąpić od umowy. Możesz też wysłać
+            inne jednoznaczne oświadczenie. Prześlij je do właściwego adresata wskazanego powyżej.</p>
+          <p>Informuję o odstąpieniu od umowy dotyczącej następującej usługi Mori
+            lub treści cyfrowej:</p>
+          <ul>
+            <li>Usługa lub treść cyfrowa: ____________________</li>
+            <li>Data zawarcia umowy: ____________________</li>
+            <li>Imię i nazwisko konsumenta: ____________________</li>
+            <li>Adres konsumenta: ____________________</li>
+            <li>Data: ____________________</li>
+            <li>Podpis konsumenta, tylko przy wysłaniu na papierze: ____________________</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="reklamacje">
+        <h2 id="reklamacje">7. Reklamacje i rozwiązywanie sporów</h2>
+        <p>Reklamację wyślij na <a href="#kontakt">adres e-mail lub pocztowy wydawcy</a>.
+          Opisz problem, oczekiwany sposób jego rozwiązania i sposób kontaktu zwrotnego.
+          Jeśli stosuje się polskie prawo konsumenckie, odpowiadamy w ciągu 14 dni
+          od otrzymania reklamacji, e-mailem lub pocztą.</p>
+        <p>Wydawca odpowiada za ustawową zgodność treści i usług cyfrowych z umową,
+          w tym niezbędne aktualizacje. Zgodnie z przepisami konsumenckimi UE możesz
+          żądać doprowadzenia niezgodnych treści lub usług do zgodności z umową.
+          Po spełnieniu ustawowych warunków możesz żądać proporcjonalnego obniżenia ceny
+          lub odstąpić od umowy.</p>
+        <p>W UE, po nierozwiązaniu sporu w drodze reklamacji, możesz złożyć wniosek
+          do właściwego podmiotu pozasądowego rozwiązywania sporów konsumenckich.
+          Jego zasady określają warunki dostępu i sposób złożenia wniosku; udział
+          może wymagać zgody obu stron. Zobacz
+          <a href="https://consumer-redress.ec.europa.eu/list-alternative-dispute-resolution-adr-bodies_pl">unijny wykaz podmiotów rozstrzygających spory</a>.</p>
+      </section>
+    </div>
+  </main>
+  <script>
+    const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
+    const linkedSection = document.getElementById(window.location.hash.slice(1));
+    const linkedVersion = linkedSection?.closest("[data-terms-language]");
+    const language = requestedLanguage === "en" || requestedLanguage === "pl"
+      ? requestedLanguage
+      : linkedVersion?.dataset.termsLanguage || "en";
+
+    document.documentElement.lang = language;
+    document.title = document.querySelector('header[lang="' + language + '"] h1').textContent;
+
+    for (const element of document.querySelectorAll("[data-terms-language]")) {
+      element.hidden = element.dataset.termsLanguage !== language;
+    }
+
+    for (const link of document.querySelectorAll(".language-switch a")) {
+      link.href = "?lang=" + link.hreflang;
+      if (link.hreflang === language) {
+        link.setAttribute("aria-current", "page");
+      }
+    }
+  </script>
+</body>
+</html>
 
